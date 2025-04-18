@@ -6,7 +6,7 @@
   "author": "edevars <e.devars.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development webpack serve",
+    "dev": "cross-env NODE_ENV=development webpack serve",
     "build": "NODE_ENV=production webpack",
     "start": "NODE_ENV=production yarn run build && node server.js"
   },
@@ -26,6 +26,7 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.30.0",
     "eslint-plugin-react": "^7.31.11",
     "file-loader": "^6.2.0",
